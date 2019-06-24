@@ -1,0 +1,444 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Read Me · Redux-Tangram</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter active" data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Read Me
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Concepts
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="docs/concepts/Mutation.html">
+            
+                <a href="docs/concepts/Mutation.html">
+            
+                    
+                    Mutation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="docs/concepts/Saga.html">
+            
+                <a href="docs/concepts/Saga.html">
+            
+                    
+                    Saga
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="docs/concepts/Module.html">
+            
+                <a href="docs/concepts/Module.html">
+            
+                    
+                    Module
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Plugins
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="docs/plugins/PluginPending.html">
+            
+                <a href="docs/plugins/PluginPending.html">
+            
+                    
+                    Plugin Pending
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="docs/plugins/PluginSaga.html">
+            
+                <a href="docs/plugins/PluginSaga.html">
+            
+                    
+                    Plugin Saga
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Read Me</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="redux-tangram">redux-tangram</h1>
+<p>redux-tangram &#x662F;&#x4E00;&#x4E2A;&#x6784;&#x5EFA;&#x4E8E;<a href="https://redux.js.org/" target="_blank">Redux</a>&#x548C;<a href="https://redux-saga.js.org/" target="_blank">Reudx-Saga</a>&#x4E4B;&#x4E0A;&#x7684; javascript &#x5E93;&#xFF0C; &#x80FD;&#x591F;&#x7B80;&#x5316; Redux &#x8C03;&#x7528;&#x8FC7;&#x7A0B;&#xFF0C;&#x51CF;&#x5C11; Redux &#x4F7F;&#x7528;&#x8FC7;&#x7A0B;&#x4E2D;&#x7684;&#x6A21;&#x7248;&#x4EE3;&#x7801;&#x3002;</p>
+<p>&#x4F7F;&#x7528; redux-tangram &#x4F7F; Redux &#x4E2D; action,reducer,selector &#x7B49;&#x6982;&#x5FF5;&#x6839;&#x636E;&#x5177;&#x4F53;&#x7684;&#x529F;&#x80FD;&#x6A21;&#x5757;&#x66F4;&#x5185;&#x805A;&#xFF0C;&#x5E76;&#x53EF;&#x968F;&#x610F;&#x7EC4;&#x5408;</p>
+<p>redux-tangram &#x63D0;&#x4F9B;&#x4E86;&#x5B8C;&#x5584;&#x7684;&#x7C7B;&#x578B;&#x652F;&#x6301;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x4F7F;&#x7528; typescript&#xFF0C;redux-tangram &#x4F1A;&#x6839;&#x636E;&#x4F60;&#x6A21;&#x5757;&#x7684;&#x5B9A;&#x4E49;&#x5BF9;&#x8C61;&#x8FDB;&#x884C;&#x63A8;&#x5BFC;&#xFF0C;&#x751F;&#x6210;&#x7684; redux-tangram module &#x4F1A;&#x83B7;&#x5F97;&#x5B8C;&#x5584;&#x7684;&#x7C7B;&#x578B;&#x63D0;&#x9192;</p>
+<h2 id="installation">Installation</h2>
+<pre><code class="lang-sh">npm install --save redux-tangram
+</code></pre>
+<h2 id="get-start">Get Start</h2>
+<p>&#x4EE5; todos &#x4E3A;&#x4F8B;&#xFF0C;&#x6211;&#x4EEC;&#x5148;&#x4EE5;&#x4E00;&#x4E2A; js &#x5BF9;&#x8C61;&#x5B9A;&#x4E49;&#x597D; todos &#x6A21;&#x5757;&#x7684;&#x6570;&#x636E;&#x683C;&#x5F0F;&#x548C;&#x5305;&#x542B;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x8C03;&#x7528;<code>createModule</code>&#x65B9;&#x6CD5;&#x751F;&#x6210;&#x5BF9;&#x5E94;&#x7684;&#x6A21;&#x5757;</p>
+<h4 id="todosjs">todos.js</h4>
+<pre><code class="lang-javascript"><span class="hljs-keyword">import</span> { createModule } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;redux-tangram&quot;</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> createModule({
+  state: [],
+  mutations: {
+    add(state, todo) {
+      <span class="hljs-keyword">return</span> [...state, todo];
+    }
+  },
+  sagas: {
+    *remoteAdd() {
+      <span class="hljs-keyword">const</span> remoteTodo = <span class="hljs-keyword">yield</span> <span class="hljs-comment">/* &#x4E00;&#x4E9B;&#x5F02;&#x6B65;&#x7684;&#x6216;&#x5305;&#x542B;&#x526F;&#x4F5C;&#x7528;&#x7684;&#x8C03;&#x7528; */</span> fetchNew();
+      <span class="hljs-keyword">this</span>.add(remoteTodo);
+    }
+  }
+});
+</code></pre>
+<p>&#x7136;&#x540E;&#x6211;&#x4EEC;&#x8C03;&#x7528;<code>tangramFactory</code>&#x751F;&#x6210;&#x4E00;&#x4E2A; redux &#x652F;&#x6301;&#x683C;&#x5F0F;&#x7684;&#x589E;&#x5F3A;&#x56E0;&#x5B50;&#xFF08;enhancer&#xFF09;&#xFF0C;&#x8BE5;&#x589E;&#x5F3A;&#x56E0;&#x5B50;&#x4E5F;&#x5305;&#x542B;<code>toStore</code>&#x65B9;&#x6CD5;&#x652F;&#x6301;&#x4EE5;&#x914D;&#x7F6E;&#x7684;&#x5F62;&#x5F0F;&#x751F;&#x6210; redux store</p>
+<h4 id="indexjs">index.js</h4>
+<pre><code class="lang-javascript"><span class="hljs-keyword">import</span> tangramFactory <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;redux-tangram&quot;</span>;
+<span class="hljs-keyword">import</span> extraReducer <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./extraReducer&quot;</span>;
+<span class="hljs-keyword">import</span> middlewares <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./middleware&quot;</span>;
+<span class="hljs-keyword">import</span> enhancers <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./enhancer&quot;</span>;
+
+<span class="hljs-keyword">const</span> store = tangramFactory().toStore({
+  reducer: extraReducer,
+  middleware: middlewares,
+  enhancer: enhancers
+});
+</code></pre>
+<p>&#x6216;&#x8005;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;<code>tangramFactory</code>&#x66FF;&#x6362;<code>redux</code>&#x7684;<code>compose</code>&#x65B9;&#x6CD5;&#x7EC4;&#x5408;&#x5176;&#x4ED6;&#x7684; enhancer&#xFF0C;middleware &#x6765;&#x751F;&#x6210; store</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">import</span> { createStore, compose, applyMiddleware } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;redux&quot;</span>;
+
+<span class="hljs-keyword">const</span> store = createStore(
+  extraReducer,
+  tangramFactory(...enhancers, applyMiddleware(...middlewares))
+);
+</code></pre>
+<blockquote>
+<p>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5176;&#x4ED6; enhancer&#xFF0C;middleware &#x8BF7;&#x8C03;&#x7528;<code>tangramFactory()</code>&#x3002;&#x8BE5;&#x65B9;&#x6CD5;&#x4F1A;&#x751F;&#x6210;&#x5185;&#x7F6E;&#x7684; enhancer &#x6539;&#x53D8;&#x6211;&#x4EEC;&#x7684; store</p>
+</blockquote>
+<p>&#x4EE5;&#x4E0A;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x751F;&#x6210;&#x7684; store &#x90FD;&#x4F1A;&#x5305;&#x542B;<code>root</code>&#x5C5E;&#x6027;&#xFF0C;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x7A7A;&#x7684; module&#xFF0C;&#x4F5C;&#x4E3A;&#x6211;&#x4EEC;&#x6574;&#x4E2A; module tree &#x7684;&#x6839;&#x8282;&#x70B9;&#xFF0C;&#x5176;&#x4ED6;&#x6A21;&#x5757;&#x53EF;&#x4EE5;&#x4EE5;&#x6811;&#x5F62;&#x7ED3;&#x6784;&#x6DFB;&#x52A0;&#x5230;<code>root</code>&#x6A21;&#x5757;&#x4E0A;&#x3002;&#x6BCF;&#x4E2A;&#x6A21;&#x5757;&#x672C;&#x8EAB;&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6309;<code>(key:string, module: Module | ModuleDefination)=&gt;Module</code>&#x7684;&#x683C;&#x5F0F;&#x8C03;&#x7528;&#x5B83;&#xFF0C;&#x5982;&#x4E0B;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">import</span> todos <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./todos&quot;</span>;
+
+store.root(<span class="hljs-string">&quot;todos&quot;</span>, todos);
+</code></pre>
+<p>&#x8FD9;&#x6837; todos &#x6A21;&#x5757;&#x88AB;&#x6DFB;&#x52A0;&#x5230; root &#x7684;&apos;todos&apos;&#x5C5E;&#x6027;&#x8282;&#x70B9;&#x4E0B;&#xFF0C;&#x6A21;&#x5757;&#x5728;&#x6574;&#x4E2A; module tree &#x4E0A;&#x7684;&#x4F4D;&#x7F6E;&#x548C;&#x8BE5;&#x6A21;&#x5757; state &#x5728; state tree &#x4E0A;&#x7684;&#x4F4D;&#x7F6E;&#x4E00;&#x4E00;&#x5BF9;&#x5E94;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x5B8C;&#x6210;&#x4EE5;&#x4E0A;&#x540E;&#x6211;&#x4EEC;&#x7684; store state tree &#x5927;&#x6982;&#x662F;&#x4EE5;&#x4E0B;&#x7684;&#x683C;&#x5F0F;</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;todos&quot;</span>: []
+}
+</code></pre>
+<p>&#x4E4B;&#x540E;&#x4F60;&#x5C31;&#x53EF;&#x4EE5;&#x6309;&#x51FD;&#x6570;&#x7684;&#x5F62;&#x5F0F;&#x8C03;&#x7528; module &#x4E2D;&#x66B4;&#x9732;&#x7684; act &#x65B9;&#x6CD5;&#x4E86;&#xFF0C;&#x5E76;&#x4E14; module &#x672C;&#x8EAB;&#x5728;&#x5355;&#x53C2;&#x6570;&#x5E76;&#x53C2;&#x6570;&#x7C7B;&#x578B;&#x4E3A;&#x5BF9;&#x8C61;&#x65F6;&#x6309;&#x7167; module &#x5C42;&#x6B21;&#x7ED3;&#x6784;&#x8FD4;&#x56DE;&#x5BF9;&#x5E94; state&#xFF0C;&#x4EE5; React Component &#x4E3A;&#x4F8B;</p>
+<h4 id="todoscreenjs">TodoScreen.js</h4>
+<pre><code class="lang-jsx"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
+<span class="hljs-keyword">import</span> { connect } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react-redux&quot;</span>;
+<span class="hljs-keyword">import</span> todos <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./todos&quot;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TodoScreen</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
+  render() {
+    <span class="hljs-comment">// React render</span>
+  }
+
+  addTodo() {
+    <span class="hljs-comment">//&#x66B4;&#x9732;&#x7684;action create&#x5DF2;&#x7ECF;&#x7ED1;&#x5B9A;&#x5230;store&#x7684;dispatch&#xFF0C;&#x6240;&#x4EE5;&#x76F4;&#x63A5;&#x8C03;&#x7528;</span>
+    todos.add(<span class="hljs-string">&quot;job 1&quot;</span>);
+  }
+
+  fetchTodo() {
+    todos.remoteAdd();
+  }
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> connect(ignoreWholeState =&gt; {
+  <span class="hljs-comment">//&#x65E0;&#x53C2;&#x8C03;&#x7528;&#x65F6;&#xFF0C;&#x8FD4;&#x56DE;module&#x5BF9;&#x5E94;state&#xFF0C;&#x6B64;&#x5904;&#x53EF;&#x4EE5;&#x5FFD;&#x7565;&#x5168;&#x5C40;state&#xFF0C;&#x53EA;&#x5F53;&#x4F5C;redux&#x7684;&#x8BA2;&#x9605;&#x65B9;&#x6CD5;&#x4F7F;&#x7528;</span>
+  <span class="hljs-comment">//&#x5E76;&#x4E14;&#x6B64;&#x5904;&#x53EF;&#x4EE5;&#x7ED9;&#x4F60;&#x8BE5;state&#x7684;&#x9759;&#x6001;&#x7C7B;&#x578B;&#x63D0;&#x9192;</span>
+  <span class="hljs-keyword">const</span> todosState = todos();
+  <span class="hljs-keyword">return</span> {
+    todos: todosState
+  };
+})(TodoScreen);
+</code></pre>
+<p>&#x4EE5;&#x4E0A;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x76F4;&#x89C2;&#x7684;&#x5F97;&#x5230;&#x5982;&#x4E0B;&#x597D;&#x5904;</p>
+<ul>
+<li>&#x76F4;&#x89C2;&#x7684;&#x5B9A;&#x4E49;&#x4F60;&#x4F7F;&#x7528; redux &#x65F6;&#x9700;&#x8981;&#x7684;&#x4E00;&#x5207;&#xFF0C;&#x76F8;&#x5173;&#x8054;&#x7684;&#x529F;&#x80FD;&#x6309;&#x7167; module &#x4EE5;&#x6811;&#x5F62;&#x7EC4;&#x5408;&#x5E76;&#x5212;&#x5206;&#xFF0C;&#x518D;&#x4E5F;&#x6CA1;&#x6709;&#x96F6;&#x6563;&#x7684; action creater&#xFF0C; reducer&#xFF0C; dispatch</li>
+<li>redux-tangram &#x4E3A;&#x4F60;&#x9690;&#x53BB;&#x4E86; action&#xFF0C;&#x4E00;&#x822C;&#x7684; redux &#x6A21;&#x7248;&#x4E2D;&#xFF0C;action &#x4F5C;&#x4E3A;&#x63CF;&#x8FF0;&#x4E8B;&#x4EF6;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x5B83;&#x7684;&#x683C;&#x5F0F;&#x8026;&#x5408;&#x4E86;&#x5BF9;&#x5E94;&#x7684; action creator &#x548C; reducer&#x3002;redux-tangram &#x80CC;&#x540E;&#x867D;&#x7136;&#x8FD8;&#x662F;&#x4EE5;<code>dispatch(action)</code>&#x7684;&#x65B9;&#x5F0F;&#x6267;&#x884C;&#xFF0C;&#x4F46;&#x4F1A;&#x4E3A;&#x4F60;&#x81EA;&#x52A8;&#x751F;&#x6210; action&#xFF0C;action &#x4E2D;&#x7684;&#x8F7D;&#x8377;&#xFF08;payload&#xFF09;&#x901A;&#x8FC7;&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#x6765;&#x4F20;&#x9012;&#x3002;&#x8FD9;&#x5927;&#x5927;&#x7B80;&#x5316;&#x4E86;&#x5176;&#x4E2D;&#x7684;&#x6A21;&#x7248;&#x4EE3;&#x7801;</li>
+<li>&#x6BCF;&#x4E2A; module &#x90FD;&#x662F;&#x9AD8;&#x5185;&#x805A;&#x7684;&#xFF0C;&#x8C03;&#x7528;&#x7684;&#x5730;&#x65B9;&#x9700;&#x8981;&#x663E;&#x793A;<code>import &apos;your-module&apos;</code>&#x3002;&#x5F53;&#x5B9A;&#x4E49;&#x6709;&#x53D8;&#x5316;&#x65F6;&#xFF0C;&#x501F;&#x52A9;&#x7F16;&#x8BD1;&#x5668;&#x6211;&#x4EEC;&#x80FD;&#x9A6C;&#x4E0A;&#x53D1;&#x73B0;&#x8C03;&#x7528;&#x9519;&#x8BEF;&#x7684;&#x5730;&#x65B9;</li>
+<li>module &#x53EF;&#x4EE5;&#x7075;&#x6D3B;&#x7684;&#x76F8;&#x4E92;&#x7EC4;&#x5408;&#xFF0C;&#x501F;&#x52A9; module &#x7684; selector &#x65B9;&#x6CD5;&#xFF0C;&#x6211;&#x4EEC;&#x5176;&#x5B9E;&#x90FD;&#x4E0D;&#x9700;&#x8981;&#x5173;&#x5FC3; module &#x5728; store state tree &#x4E2D;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x6BD4;&#x5982;&#x5F53;&#x6211;&#x4EEC;&#x4FEE;&#x6539; todos &#x7684;&#x4F4D;&#x7F6E;</li>
+</ul>
+<pre><code class="lang-javascript">store.root(<span class="hljs-string">&quot;td&quot;</span>, todos);
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x751A;&#x81F3;&#x4E0D;&#x9700;&#x8981;&#x4FEE;&#x6539;&#x5176;&#x4ED6;&#x4EE3;&#x7801;&#xFF0C;&#x800C;&#x5982;&#x679C;&#x662F;&#x4E00;&#x822C;&#x7684; redux &#x6A21;&#x7248;&#xFF0C;<code>TodoScreen.js</code>&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#x53EF;&#x80FD;&#x662F;&#x8FD9;&#x6837;&#x7684;</p>
+<h4 id="todoscreenjs">TodoScreen.js</h4>
+<pre><code class="lang-javascript"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> connect(state =&gt; {
+  <span class="hljs-keyword">const</span> todosState = state[<span class="hljs-string">&quot;todos&quot;</span>];
+  <span class="hljs-keyword">return</span> {
+    todos: todosState
+  };
+})(TodoScreen);
+</code></pre>
+<p>&#x7C7B;&#x4F3C;&#x7684; selector &#x8C03;&#x7528;&#x90FD;&#x9700;&#x8981;&#x968F; state &#x5C42;&#x6B21;&#x7ED3;&#x6784;&#x53D8;&#x5316;&#x800C;&#x6539;&#x53D8;</p>
+<h2 id="&#x76EE;&#x5F55;">&#x76EE;&#x5F55;</h2>
+<ul>
+<li>Concepts<ul>
+<li><a href="docs/concepts/Mutation.html">Mutation</a></li>
+<li><a href="docs/concepts/Saga.html">Saga</a></li>
+<li><a href="docs/concepts/Module.html">Module</a></li>
+</ul>
+</li>
+<li>Plugins<ul>
+<li><a href="docs/plugins/PluginPending.html">Plugin Pending</a></li>
+<li><a href="docs/plugins/PluginSaga.html">Plugin Saga</a></li>
+</ul>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Read Me","level":"1.1","depth":1,"next":{"title":"Concepts","level":"1.2","depth":1,"ref":"","articles":[{"title":"Mutation","level":"1.2.1","depth":2,"path":"docs/concepts/Mutation.md","ref":"docs/concepts/Mutation.md","articles":[]},{"title":"Saga","level":"1.2.2","depth":2,"path":"docs/concepts/Saga.md","ref":"docs/concepts/Saga.md","articles":[]},{"title":"Module","level":"1.2.3","depth":2,"path":"docs/concepts/Module.md","ref":"docs/concepts/Module.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Redux-Tangram","gitbook":"3.2.3"},"file":{"path":"README.md","mtime":"2019-05-20T06:54:03.592Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-24T07:33:28.221Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,437 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Module · Redux-Tangram</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="Saga.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Read Me
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Concepts
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="Mutation.html">
+            
+                <a href="Mutation.html">
+            
+                    
+                    Mutation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="Saga.html">
+            
+                <a href="Saga.html">
+            
+                    
+                    Saga
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3" data-path="Module.html">
+            
+                <a href="Module.html">
+            
+                    
+                    Module
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Plugins
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../plugins/PluginPending.html">
+            
+                <a href="../plugins/PluginPending.html">
+            
+                    
+                    Plugin Pending
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../plugins/PluginSaga.html">
+            
+                <a href="../plugins/PluginSaga.html">
+            
+                    
+                    Plugin Saga
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Module</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="module">Module</h1>
+<p><code>module</code>&#x662F;&#x4E00;&#x4E2A;&#x5305;&#x542B;<a href="Mutation.html#MutationAct">MutationAct</a>&#xFF0C;<a href="Saga.html#SagaAct">SagaAct</a>&#x548C;&#x5176;&#x4ED6;&#x6B21;&#x7EA7;<code>moudle</code>&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x7531;<code>State</code>&#x7684; selecotr &#x51FD;&#x6570;&#xFF0C;&#x5C5E;&#x6027;&#x9009;&#x62E9;&#x51FD;&#x6570;&#x7B49;&#x91CD;&#x8F7D;&#xFF08;overloads&#xFF09;&#x7684;&#x51FD;&#x6570;</p>
+<h2 id="definition">Definition</h2>
+<p><code>module</code>&#x901A;&#x8FC7;&#x5411;<code>createModule</code>&#x51FD;&#x6570;&#x4F20;&#x5165;&#x5B9A;&#x4E49;&#x5BF9;&#x8C61;&#x751F;&#x6210;&#x3002;&#x4E00;&#x4E2A;&#x5B9A;&#x4E49;&#x5BF9;&#x8C61;&#x5185;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x5C5E;&#x6027;</p>
+<ul>
+<li><p><code>state: any</code> - state &#x5C5E;&#x6027;&#x5B9A;&#x4E49;&#x4E86;&#x8BE5;<code>module</code>&#x521D;&#x59CB;&#x7684; state &#x503C;&#xFF0C;&#x8BE5; state &#x503C;&#x4F1A;&#x662F;<code>mutation</code>&#x51FD;&#x6570;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x3002;&#x5F53;&#x8BE5;<code>module</code>&#x62E5;&#x6709;&#x5B50;<code>module</code>&#x65F6;&#xFF0C;state &#x5FC5;&#x987B;&#x662F;&#x666E;&#x901A;&#x5BF9;&#x8C61;&#xFF0C;&#x56E0;&#x4E3A;&#x6240;&#x6709;&#x5B50; module &#x7684; state &#x4F1A;&#x4EE5;&#x5B83;&#x4EEC;&#x5728;&#x8BE5; module &#x4E2D;&#x7684;&#x4F4D;&#x7F6E;&#x88AB;&#x6DFB;&#x52A0;&#x5230;&#x8BE5; state &#x4E2D;</p>
+</li>
+<li><p><code>mutations: {[key: string]: Mutation}</code> - mutations &#x5BF9;&#x8C61;&#x5185;&#x7684;&#x5C5E;&#x6027;&#x662F;<code>Mutation</code>&#x5B9A;&#x4E49;&#x51FD;&#x6570;&#xFF0C;&#x5B83;&#x4EEC;&#x5C06;&#x4F1A;&#x8F6C;&#x5316;&#x6210;<code>MutationAct</code>&#x5E76;&#x4EE5;&#x5F53;&#x524D;&#x5C5E;&#x6027;&#x540D;&#x8D4B;&#x503C;&#x5230;&#x6700;&#x7EC8;&#x751F;&#x6210;&#x7684;<code>module</code>&#x4E2D;</p>
+</li>
+<li><p><code>sagas: {[key: string]: Saga}</code> - sagas &#x5BF9;&#x8C61;&#x5185;&#x7684;&#x5C5E;&#x6027;&#x503C;&#x662F;<code>Saga</code>&#x51FD;&#x6570;&#xFF0C;&#x5B83;&#x4EEC;&#x5C06;&#x8F6C;&#x5316;&#x4E3A;<code>SagaAct</code>&#x5E76;&#x4EE5;&#x5F53;&#x524D;&#x5C5E;&#x6027;&#x540D;&#x8D4B;&#x503C;&#x5230;&#x6700;&#x7EC8;&#x751F;&#x6210;&#x7684;<code>module</code>&#x4E2D;</p>
+</li>
+<li><p><code>modules</code> - modules &#x5C5E;&#x6027;&#x503C;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x4E24;&#x79CD;&#x683C;&#x5F0F;</p>
+<ul>
+<li><p><code>{[key: string: Module | ModuleDefinition]}</code> - &#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x5C5E;&#x6027;&#x503C;&#x662F;&#x5B50;<code>moudle</code>&#x6216;&#x8BE5;<code>module</code>&#x7684;&#x5B9A;&#x4E49;&#x5BF9;&#x8C61;&#xFF0C;&#x5B50;<code>module</code>&#x4F1A;&#x4EE5;&#x5728;&#x8BE5;&#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x4F4D;&#x7F6E;&#x88AB;&#x6DFB;&#x52A0;&#x5230;&#x5176;&#x7236;<code>module</code></p>
+</li>
+<li><p><code>(key:string) =&gt; Module | ModuleDefinition | void</code> - &#x51FD;&#x6570;&#xFF0C;&#x7528;&#x4E8E;&#x52A8;&#x6001; module &#x5F62;&#x5F0F;&#xFF0C;&#x5165;&#x53C2; key &#x662F;&#x5B50; module &#x7684;&#x5C5E;&#x6027;&#x540D;&#xFF0C;&#x8FD4;&#x56DE;<code>module</code>&#x5BF9;&#x8C61;&#x6216;<code>module</code>&#x5B9A;&#x4E49;&#x5BF9;&#x8C61;&#x4F1A;&#x5728;&#x8BE5;&#x5C5E;&#x6027;&#x540D;&#x4E0B;&#x751F;&#x6210;&#x5B50;<code>module</code></p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="function-overloads">Function Overloads</h2>
+<p><code>module</code>&#x4F5C;&#x4E3A;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x6309;&#x4EE5;&#x4E0B;&#x65B9;&#x5F0F;&#x8C03;&#x7528;</p>
+<ul>
+<li><p><code>(key: string, subModule: Module | ModuleDefinition) =&gt; Module</code> - &#x5F53;&#x7B2C;&#x4E00;&#x4E2A;&#x5165;&#x53C2;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x5165;&#x53C2;&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A;<code>module</code>&#x5BF9;&#x8C61;&#x6216;<code>module</code>&#x7684;&#x5B9A;&#x4E49;&#x5BF9;&#x8C61;&#x3002;&#x8FD9;&#x4E48;&#x8C03;&#x7528;&#x4F1A;&#x5C06;&#x8BE5;<code>module</code>&#x6DFB;&#x52A0;&#x4E3A;&#x7236;<code>module</code>&#x7684;&#x5BF9;&#x5E94; key &#x7684;&#x4E0B;&#x5C42;&#xFF0C;&#x8FD4;&#x56DE;&#x88AB;&#x6DFB;&#x52A0;&#x7684;<code>module</code></p>
+</li>
+<li><p><code>(key: string)=&gt; MutationAct | SagaAct | Module | undefined</code> - &#x5F53;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x5E76;&#x4E14;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x65F6;&#xFF0C;&#x4F1A;&#x8FD4;&#x56DE;&#x8BE5;<code>module</code>&#x5C5E;&#x6027;&#xFF0C;&#x5F53;&#x4E0D;&#x5B58;&#x5728;&#x8BE5;&#x5C5E;&#x6027;&#x65F6;&#x9ED8;&#x8BA4;&#x8FD4;&#x56DE;<code>undefined</code>&#xFF0C;&#x5F53;&#x8BE5;<code>moudle</code>&#x5B58;&#x5728;&#x52A8;&#x6001;&#x5B50;<code>module</code>&#x65F6;&#x6709;&#x6240;&#x4E0D;&#x540C;&#xFF0C;&#x89C1;&#x4E0B;&#x6761;</p>
+</li>
+<li><p><code>(key: string)=&gt; module</code> - &#x5F53;<code>module</code>&#x5B9A;&#x4E49;&#x5BF9;&#x8C61;&#x5B58;&#x5728;<code>modules</code>&#x5C5E;&#x6027;&#x5E76;&#x4E14;&#x8BE5;&#x5C5E;&#x6027;&#x662F;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x8868;&#x793A;&#x8BE5;<code>module</code>&#x5B58;&#x5728;&#x52A8;&#x6001;&#x6B21;&#x7EA7;<code>module</code>&#x3002;&#x6B64;&#x65F6;&#x5F53;&#x4EE5;&#x552F;&#x4E00;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x8C03;&#x7528;<code>moudle</code>&#x51FD;&#x6570;&#x5E76;&#x4E14;&#x4E0D;&#x6EE1;&#x8DB3;&#x4E0A;&#x4E00;&#x6761;&#x4EF6;&#x65F6;&#xFF0C;<code>redux-tangram</code>&#x4F1A;&#x8C03;&#x7528;<code>modules</code>&#x51FD;&#x6570;&#xFF0C;&#x5E76;&#x4F20;&#x9012;&#x8BE5; key &#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5F53;&#x51FD;&#x6570;&#x8FD4;&#x56DE;<code>moudle</code>&#x65F6;&#xFF0C;&#x4F1A;&#x5C06;&#x8BE5;<code>module</code>&#x6CE8;&#x518C;&#x4E3A;&#x8C03;&#x7528;<code>module</code>&#x5728;&#x8BE5; key &#x4E0A;&#x7684;&#x5B50;<code>module</code>&#x5E76;&#x8FD4;&#x56DE;&#x8BE5;<code>module</code>&#x3002;&#x5F53;<code>modules</code>&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x7684;&#x662F;<code>module</code>&#x5B9A;&#x4E49;&#x5BF9;&#x8C61;&#x65F6;&#xFF0C;&#x5148;&#x751F;&#x6210;&#x5BF9;&#x5E94;<code>module</code>&#x518D;&#x6267;&#x884C;&#x3002;&#x5176;&#x4ED6;&#x7684;&#x8FD4;&#x56DE;&#x5BF9;&#x8C61;&#x89C6;&#x4F5C;&#x65E0;&#x6548;</p>
+</li>
+<li><p><code>()=&gt; State</code> - &#x65E0;&#x53C2;&#x8C03;&#x7528;&#x8FD4;&#x56DE;&#x5F53;&#x524D;<code>State</code></p>
+</li>
+</ul>
+<h2 id="dynamic-module">Dynamic Module</h2>
+<p>&#x5F53;&#x4E00;&#x4E2A; module &#x7684;&#x529F;&#x80FD;&#x53EF;&#x4EE5;&#x6309;&#x5E38;&#x91CF;&#x5207;&#x5206;&#x6210;&#x72EC;&#x7ACB;&#x7684;&#x5757;&#x5E76;&#x4E14;&#x9700;&#x8981;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x786E;&#x5B9A;&#x533A;&#x5206;&#x7684;&#x5E38;&#x91CF;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5E94;&#x7528;&#x52A8;&#x6001;&#x6A21;&#x5757;&#x7684;&#x529F;&#x80FD;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> mainModule = createModule({
+  modules: key =&gt; {
+    <span class="hljs-keyword">return</span> {
+      state: [],
+      mutations: {
+        add(state, some) {
+            <span class="hljs-keyword">return</span> [...state, some]
+        }
+      }
+    };
+  }
+});
+</code></pre>
+<p>&#x5728;&#x6A21;&#x5757;&#x5B9A;&#x4E49;&#x5BF9;&#x8C61;&#x4E2D;&#x6307;&#x5B9A;modules&#x4E3A;&#x51FD;&#x6570;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x5BF9;mainModule&#x6309;&#x5982;&#x4E0B;&#x94FE;&#x5F0F;&#x8C03;&#x7528;</p>
+<pre><code class="lang-javascript">mainModule(<span class="hljs-string">&apos;sub0&apos;</span>).add(<span class="hljs-string">&apos;one&apos;</span>)
+</code></pre>
+<p>&#x5176;&#x4E2D;&#x5305;&#x542B;&#x7684;&#x6B65;&#x9AA4;&#x4E3A;</p>
+<ol>
+<li><p><code>const subMoudle = mainModule(&apos;sub0&apos;)</code> - &#x53D6;mainModule&#x4E0B;&#x540D;&#x4E3A;sub0&#x7684;&#x5B50;<code>module</code>&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x5B58;&#x5728;&#x5219;&#x8C03;&#x7528;modules&#x5B9A;&#x4E49;&#x51FD;&#x6570;&#x751F;&#x6210;</p>
+</li>
+<li><p><code>subModule.add(&apos;one&apos;)</code> - &#x8C03;&#x7528;sub0&#x5B50;<code>module</code>&#x7684;<code>MutationAct</code></p>
+</li>
+</ol>
+<h2 id="typing">Typing</h2>
+<p>&#x5F53;&#x6211;&#x4EEC;&#x5982;&#x4E0B;&#x8C03;&#x7528;<code>createModule</code>&#x51FD;&#x6570;</p>
+<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> mockModule = createModule({
+  state: {
+    count: <span class="hljs-number">1</span>
+  },
+  mutations: {
+    add(state, num: <span class="hljs-built_in">number</span>) {
+      <span class="hljs-keyword">return</span> {
+        ...state,
+        count: state.count + num
+      };
+    }
+  },
+  sagas: {
+    *asyncAdd(num: <span class="hljs-built_in">number</span>) {
+      <span class="hljs-keyword">yield</span> delay(<span class="hljs-number">1000</span>);
+      <span class="hljs-keyword">yield</span> call(<span class="hljs-keyword">this</span>.add, num);
+    }
+  },
+  modules: {
+    list: {
+      state: [] as <span class="hljs-built_in">string</span>[],
+      mutations: {
+        append(state, batchList: <span class="hljs-built_in">string</span>[]) {
+          <span class="hljs-keyword">return</span> [...state, ...batchList];
+        }
+      }
+    }
+  }
+});
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#x7C7B;&#x4F3C;&#x5982;&#x4E0B;&#x7C7B;&#x578B;&#x7ED3;&#x6784;&#x7684;<code>module</code></p>
+<pre><code class="lang-typescript"><span class="hljs-keyword">type</span> MockModule = {
+  <span class="hljs-comment">//MutationAct</span>
+  add(num: <span class="hljs-built_in">number</span>): { <span class="hljs-keyword">type</span>: <span class="hljs-built_in">string</span>; payload: [<span class="hljs-built_in">number</span>] };
+  <span class="hljs-comment">//SagaAct</span>
+  asyncAdd(num: <span class="hljs-built_in">number</span>): Task;
+
+  <span class="hljs-comment">//Module Function Overloads</span>
+  (key: <span class="hljs-built_in">string</span>, subModule: Module | ModuleDefinition): Module;
+  (key: <span class="hljs-built_in">string</span>): Module | MutationAct | SagaAct | <span class="hljs-literal">undefined</span>;
+  (): { count: <span class="hljs-built_in">number</span> };
+
+  <span class="hljs-comment">//SubModule</span>
+  list: {
+    append(batchList: <span class="hljs-built_in">string</span>[]): { <span class="hljs-keyword">type</span>: <span class="hljs-built_in">string</span>; payload: [<span class="hljs-built_in">string</span>[]] };
+
+    (key: <span class="hljs-built_in">string</span>, subModule: Module | ModuleDefinition): Module;
+    (key: <span class="hljs-built_in">string</span>): Module | MutationAct | SagaAct | <span class="hljs-literal">undefined</span>;
+    (): <span class="hljs-built_in">string</span>[];
+  };
+};
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Saga.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Saga">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Module","level":"1.2.3","depth":2,"next":{"title":"Plugins","level":"1.3","depth":1,"ref":"","articles":[{"title":"Plugin Pending","level":"1.3.1","depth":2,"path":"docs/plugins/PluginPending.md","ref":"docs/plugins/PluginPending.md","articles":[]},{"title":"Plugin Saga","level":"1.3.2","depth":2,"path":"docs/plugins/PluginSaga.md","ref":"docs/plugins/PluginSaga.md","articles":[]}]},"previous":{"title":"Saga","level":"1.2.2","depth":2,"path":"docs/concepts/Saga.md","ref":"docs/concepts/Saga.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Redux-Tangram","gitbook":"3.2.3"},"file":{"path":"docs/concepts/Module.md","mtime":"2019-05-20T06:48:50.941Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-24T07:33:28.221Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
